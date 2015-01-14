@@ -1,0 +1,54 @@
+<html lang="en">
+<head>
+    <title>Impress Startup</title>
+    <link rel="stylesheet" href="css/base.css"/>
+    <link rel="stylesheet" href="css/slides.css"/>
+    <link rel="stylesheet" href="css/custom.css"/>
+    <link rel="stylesheet" href="lib/highlight.js/styles/railscasts.min.css"/>
+</head>
+<body class="startup impress-not-supported">
+
+<div class="fallback-message">
+    <p>Your browser <b>doesn't support the features required</b> by impress.js, so you are presented with a simplified version of this presentation.
+    </p>
+
+    <p>For the best experience please use the latest <b>Chrome</b>, <b>Safari</b> or <b>Firefox</b> browser.</p>
+</div>
+
+<div id="impress">
+    <div class="step" data-x="0" data-y="0" data-rotate-x="">
+        <q>Don't you think that presentations given <strong>in modern browsers</strong> shouldn't <strong>copy the limits</strong> of 'classic' slide
+            decks?</q>
+    </div>
+
+    <div id="bored" class="step slide" data-x="750" data-scale="0.45" data-y="-175">
+        <h1>Highlight example</h1>
+<pre><code contenteditable data-trim>
+.directive('myDirective', function(){
+    return {
+        restrict: 'ACE'
+        scope: false    //no scope (use parent scope)
+    }
+});
+</code></pre>
+    </div>
+
+    <div class="step slide" data-x="750" data-scale="0.45" data-y="175">
+        <q>Aren't you just <b>bored</b> with all those slides-based presentations?</q>
+    </div>
+
+    <div id="overview" class="step" data-x="1000" data-y="0" data-scale="5">
+    </div>
+</div>
+<!-- bower:js -->
+<script src="lib/jquery/dist/jquery.js"></script>
+<!-- endbower -->
+<script type="text/javascript" src="lib/impress.js/js/impress.js"></script>
+<script type="text/javascript">impress().init();</script>
+<script type="text/javascript" src="lib/highlight.js/highlight.min.js"></script>
+<script type="text/javascript" src="lib/highlight.js/zoom.js"></script>
+<script type="text/javascript" src="js/custom.js"></script>
+<script>hljs.initHighlightingOnLoad();</script>
+<script src="//localhost:35729/livereload.js"></script>
+</body>
+</html>
