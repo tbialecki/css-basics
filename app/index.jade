@@ -5,12 +5,7 @@ include ./includes/layout/head.jade
 body.startup.impress-not-supported
     include ./includes/layout/fallback-message.jade
 #impress
-    .step(data-x='0', data-y='0', data-rotate-x='')
-        include ./includes/slides/step1.jade
-    #bored.step.slide(data-x='750', data-scale='0.45', data-y='-175')
-        include ./includes/slides/bored.jade
-    .step.slide(data-x='750', data-scale='0.45', data-y='175')
-        include ./includes/slides/step2.jade
+    include ./includes/slides.jade
     #overview.step(data-x='1000', data-y='0', data-scale='5')
     // bower:js
     script(src='lib/jquery/dist/jquery.js')

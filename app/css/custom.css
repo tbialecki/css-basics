@@ -1,0 +1,19 @@
+h1 {
+    font-size: 2em;
+    line-height: 2em;
+}
+
+#start h1 {
+    font-size: 100px;
+    text-align: center;
+    font-weight: bold;
+}
+
+#start h3 {
+    font-size: 30px;
+    text-align: center;
+}
+
+#start h1,#start h3{
+    margin-top: 2em;
+}
