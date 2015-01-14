@@ -1,5 +1,6 @@
 *.iml
 .idea
+.tmp
 node_modules
 /app/lib/*
 !/app/lib/highlight.js

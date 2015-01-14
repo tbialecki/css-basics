@@ -1,0 +1,9 @@
+h1 Highlight example
+pre
+    code(contenteditable, data-trim)
+        | .directive('myDirective', function(){
+        |     return {
+        |         restrict: 'ACE'
+        |         scope: false    //no scope (use parent scope)
+        |     }
+        | });

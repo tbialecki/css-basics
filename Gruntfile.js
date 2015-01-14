@@ -18,7 +18,7 @@ module.exports = function (grunt) {
                     open: {
                         target: 'http://localhost:9000/'
                     },
-                    base: ['app'],
+                    base: ['.tmp', 'app'],
                     middleware: function (connect, options) {
                         if (!Array.isArray(options.base)) {
                             options.base = [options.base];
@@ -43,19 +43,39 @@ module.exports = function (grunt) {
         },
         wiredep: {
             develop: {
-                src: ['app/index.html'],
+                src: ['app/index.jade'],
                 ignorePath: new RegExp('^app/')
             }
         },
         watch: {
             options: { livereload: true },
             all: {
-                files: ['app/**','!/app/lib/**']
+                files: ['app/**', '!/app/lib/**']
+            },
+            html: {
+                files: ['app/**/*.jade'],
+                tasks: ['jade']
+            }
+        },
+        jade: {
+            compile: {
+                options: {
+                    data: {
+                        debug: false
+                    }
+                },
+                files: {
+                    ".tmp/index.html": ['app/index.jade']
+                }
             }
         }
     });
 
+    grunt.registerTask('build', [
+        'wiredep', 'jade'
+    ]);
+
     grunt.registerTask('serve', [
-        'wiredep', 'connect:develop', 'watch'
+        'build', 'connect:develop', 'watch'
     ]);
 };
