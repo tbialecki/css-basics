@@ -1,1 +1,28 @@
 h1 Selectors
+table
+    thead
+        tr
+            th Selector
+            th Selected element(s)
+    tbody
+        tr
+            td.code p
+            td Paragraphs
+        tr
+            td.code .class1
+            td Elements with <i>class1</i>
+        tr
+            td.code #content
+            td Element with identifier <i>content</i>
+        tr
+            td.code p.class1
+            td Paragaphs with class <i>class1</i>
+        tr
+            td.code p .class1
+            td Elements with class <i>class1</i> having paragraph as parent
+        tr
+            td.code .class1 .class2
+            td Elements with class <i>class2</i> having parent with class <i>class1</i>
+        tr
+            td.code p.class1.class2
+            td Paragraphs with both <i>class1</i> and <i>class2</i> classes

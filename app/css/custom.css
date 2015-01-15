@@ -1,6 +1,7 @@
 h1 {
     font-size: 2em;
     line-height: 2em;
+    margin-bottom: 0;
 }
 
 #start h1 {
@@ -14,6 +15,39 @@ h1 {
     text-align: center;
 }
 
-#start h1,#start h3{
+#start h1, #start h3 {
     margin-top: 2em;
+}
+
+table {
+    width: 100%;
+    text-align: left;
+    margin-bottom: 10px;
+}
+
+tr {
+    border-bottom: 1px solid gray;
+}
+
+th {
+    font-weight: bold;
+}
+
+th, td {
+    padding: 5px;
+}
+
+td.code {
+    font-family: "Courier New", Courier, monospace;
+    font-weight: bold;
+}
+
+#selectors h1, #selectors2 h1 {
+    margin-bottom: 0;
+}
+
+.step > iframe {
+    margin-bottom: 10px;
+    min-height: 400px !important;
+    border: 1px solid #808080 !important;
 }

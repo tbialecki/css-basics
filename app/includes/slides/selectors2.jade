@@ -1,0 +1,23 @@
+h1 Selectors
+table
+    thead
+        tr
+            th(style="width: 250px;") Selector
+            th Selected element(s)
+    tbody
+        tr
+            td.code *
+            td All elements
+        tr
+            td.code div &gt; p
+            td All &lt;p&gt; elements where the parent is a &lt;div&gt; element
+        tr
+            td.code div + p
+            td All &lt;p&gt; elements that are placed immediately after &lt;div&gt; elements
+        tr
+            td.code p:first-child
+            td Selects every &lt;p&gt; element that is the first child of its parent
+        tr
+            td.code p:nth-child(2)
+            td Selects every &lt;p&gt; element that is the second child of its parent
+a(href="http://www.w3schools.com/cssref/css_selectors.asp", target="_blank") . . . W3C Selectors
