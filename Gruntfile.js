@@ -68,11 +68,38 @@ module.exports = function (grunt) {
                     ".tmp/index.html": ['app/index.jade']
                 }
             }
+        },
+        git_deploy: {
+            your_target: {
+                options: {
+                    url: 'https://tbialecki@github.com/tbialecki/css-basics.git',
+                    branch: 'gh-pages'
+                },
+                src: 'dist'
+            }
+        },
+        copy: {
+            dist: {
+                files: [
+                    {expand: true, cwd: 'app/', src: ['js/**'], dest: 'dist/'},
+                    {expand: true, cwd: 'app/', src: ['lib/**'], dest: 'dist/'},
+                    {expand: true, cwd: 'app/', src: ['css/**'], dest: 'dist/'},
+                    {expand: true, cwd: '.tmp/', src: ['*.html'], dest: 'dist/'}
+                ]
+            }
         }
     });
 
     grunt.registerTask('build', [
         'wiredep', 'jade'
+    ]);
+
+    grunt.registerTask('dist', [
+        'build', 'copy:dist'
+    ]);
+
+    grunt.registerTask('release', [
+        'dist','git_deploy'
     ]);
 
     grunt.registerTask('serve', [
