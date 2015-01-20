@@ -1,0 +1,23 @@
+h1 Selector's priority
+div.container6-4
+    pre
+        code(contenteditable, data-trim)
+            |&lt;div id=&quot;content&quot;&gt;
+            |    &lt;p class=&quot;active&quot;&gt;
+            |        Text
+            |        &lt;!-- (2,0,0,0) = 2000 --&gt;
+            |        &lt;span style=&quot;color: red&quot;&gt;!&lt;/span&gt;
+            |    &lt;/p&gt;
+            |&lt;/div&gt;
+    iframe(src="frames/selectors/priorities/index.html")
+br
+pre
+    code(contenteditable, data-trim)
+        |/* (0,1,0,0) = 100 */
+        |#content {
+        |    color: yellow
+        |}
+        |/* (0,0,1,2) = 12 */
+        |div p.active {
+        |    color: blue
+        |}

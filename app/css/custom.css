@@ -42,6 +42,10 @@ td.code {
     font-weight: bold;
 }
 
+.bold {
+    font-weight: bold;
+}
+
 #selectors h1, #selectors2 h1 {
     margin-bottom: 0;
 }
@@ -58,4 +62,46 @@ td.code {
 
 #syntax2.active {
     display: block;
+}
+
+h1.priorties {
+    line-height: 100px;
+    font-size: 1.5em;
+}
+
+.priorties {
+    color: red;
+}
+
+.priorties span {
+    font-size: 0.5em;
+    color: rgb(102, 102, 102);
+}
+
+#priorties2 {
+    display: none;
+}
+
+#priorties2.active {
+    display: block;
+}
+
+#priorties3 img {
+    max-height: 80%;
+    margin: 0 auto;
+    display: block;
+}
+
+.container6-4 {
+}
+.container6-4 > *:first-child{
+    width: 57.5%;
+    display: inline-block;
+    vertical-align: top;
+}
+.container6-4 > *:last-child{
+    width: 37.5%;
+    margin-left: 5%;
+    display: inline-block;
+    vertical-align: top;
 }
