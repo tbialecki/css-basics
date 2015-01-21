@@ -4,6 +4,18 @@ h1 {
     margin-bottom: 0;
 }
 
+h2 {
+    font-size: 1.2em;
+    line-height: 1.2em;
+    margin-bottom: 0.3em;
+}
+
+.center {
+    margin: 0 auto;
+    text-align: center;
+    display: block;
+}
+
 #start h1 {
     font-size: 100px;
     text-align: center;
@@ -18,13 +30,17 @@ h1 {
 #start h1, #start h3 {
     margin-top: 2em;
 }
-
+iframe {
+    width: 100%;
+}
 table {
     width: 100%;
     text-align: left;
     margin-bottom: 10px;
 }
-
+.blue{
+    color: blue
+}
 tr {
     border-bottom: 1px solid gray;
 }
@@ -54,6 +70,19 @@ td.code {
     margin-bottom: 10px;
     min-height: 400px !important;
     border: 1px solid #808080 !important;
+}
+
+.container6-4 > *:first-child {
+    width: 57.5%;
+    display: inline-block;
+    vertical-align: top;
+}
+
+.container6-4 > *:last-child {
+    width: 37.5%;
+    margin-left: 5%;
+    display: inline-block;
+    vertical-align: top;
 }
 
 #syntax2 {
@@ -92,16 +121,20 @@ h1.priorties {
     display: block;
 }
 
-.container6-4 {
+#block-inline ul {
+    list-style-type: none;
 }
-.container6-4 > *:first-child{
-    width: 57.5%;
-    display: inline-block;
-    vertical-align: top;
+#block-inline ul > li
+{
+    margin-left: 2em;
 }
-.container6-4 > *:last-child{
-    width: 37.5%;
-    margin-left: 5%;
-    display: inline-block;
-    vertical-align: top;
+#block-inline ul > li:before {
+    content: "–";
+    position: absolute;
+    margin-left: -1.1em;
+}
+#block-inline-example iframe {
+    height: 200px;
+    width: 100%;
+    border: none;
 }
