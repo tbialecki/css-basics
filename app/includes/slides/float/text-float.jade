@@ -1,0 +1,14 @@
+h1 Float in text
+
+div.css-control-container
+    div.css-control vertical-align:&nbsp;
+        select(onchange="$('#float-text-iframe').contents().find('img').css('vertical-align',this.value)")
+            option(value='bottom') bottom
+            option(value='middle') middle
+            option(value='top') top
+    div.css-control float:&nbsp;
+        select(onchange="$('#float-text-iframe').contents().find('img').css('float',this.value)")
+            option(value='none') none
+            option(value='left') left
+            option(value='right') right
+iframe#float-text-iframe(src="frames/float/text/index.html")

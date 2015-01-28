@@ -1,27 +1,38 @@
-#start.slide.step(data-x='0', data-y='0', data-rotate-x='')
+#start.slide.step(data-x='0', data-y='0')
     include ./slides/start.jade
-#syntax.slide.step(data-x='1000', data-y='0', data-rotate-x='')
+#syntax.slide.step(data-x='1000', data-y='0')
     include ./slides/syntax.jade
-#syntax2.slide.step(data-x='1000', data-y='0')
+#syntax2.visible-on-active.slide.step(data-x='1000', data-y='0')
     include ./slides/syntax2.jade
-#selectors.slide.step(data-x='1000', data-y='800', data-rotate-x='')
+#selectors.slide.step(data-x='1000', data-y='800')
     include ./slides/selectors/selectors.jade
-#selectors2.slide.step(data-x='1000', data-y='1600', data-rotate-x='')
+#selectors2.slide.step(data-x='1000', data-y='1600')
     include ./slides/selectors/selectors2.jade
-#exercise-selectors.slide.step(data-x='1000', data-y='2400', data-rotate-x='')
+#exercise-selectors.slide.step(data-x='1000', data-y='2400')
     include ./slides/selectors/exercise-selectors.jade
-#exercise-selectors2.slide.step(data-x='1000', data-y='3200', data-rotate-x='')
+#exercise-selectors2.slide.step(data-x='1000', data-y='3200')
     include ./slides/selectors/exercise-selectors2.jade
 #priorties.slide.step(data-x='1000', data-y='4000', data-rotate-x='360')
     include ./slides/selectors/priority.jade
-#priorties2.slide.step(data-x='1000', data-y='4800', data-rotate-x='')
+#priorties2.visible-on-active.slide.step(data-x='1000', data-y='4800')
     include ./slides/selectors/priority2.jade
 
-#box-model.slide.step(data-x='2000', data-y='0', data-rotate-x='')
+#box-model.slide.step(data-x='2000', data-y='0')
     include ./slides/box-model/box-model.jade
-#block-inline.slide.step(data-x='2000', data-y='800', data-rotate-x='')
+#block-inline.slide.step(data-x='2000', data-y='800')
     include ./slides/display/block-inline.jade
-#block-inline-example.slide.step(data-x='2000', data-y='1600', data-rotate-x='')
+#block-inline-example.slide.step(data-x='2000', data-y='1600')
     include ./slides/display/block-inline-example.jade
-#block-model-exercise.slide.step(data-x='2000', data-y='2400', data-rotate-x='')
+#block-model-exercise.slide.step(data-x='2000', data-y='2400')
     include ./slides/box-model/box-model-exercise.jade
+
+#float.slide.step(data-x='3000', data-y='')
+    include ./slides/float/float.jade
+#text-float.slide.step(data-x='3000', data-y='800')
+    include ./slides/float/text-float.jade
+#block-float-1.slide.step(data-x='3000', data-y='1600')
+    include ./slides/float/block-float-1.jade
+#block-float-2.slide.step(data-x='3000', data-y='2400')
+    include ./slides/float/block-float-2.jade
+#clear.slide.step(data-x='3000', data-y='3200')
+    include ./slides/float/clear.jade

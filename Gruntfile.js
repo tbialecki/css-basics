@@ -55,6 +55,10 @@ module.exports = function (grunt) {
             html: {
                 files: ['app/**/*.jade'],
                 tasks: ['jade']
+            },
+            sass: {
+                files: ['app/**/*.scss'],
+                tasks: ['sass']
             }
         },
         jade: {
@@ -86,14 +90,26 @@ module.exports = function (grunt) {
                     {expand: true, cwd: 'app/', src: ['img/**'], dest: 'dist/'},
                     {expand: true, cwd: 'app/', src: ['frames/**'], dest: 'dist/'},
                     {expand: true, cwd: 'app/', src: ['css/**'], dest: 'dist/'},
+                    {expand: true, cwd: '.tmp/', src: ['css/**'], dest: 'dist/'},
                     {expand: true, cwd: '.tmp/', src: ['*.html'], dest: 'dist/'}
                 ]
+            }
+        },
+        sass: {
+            dist: {
+                files: [{
+                    expand: true,
+                    cwd: 'app',
+                    src: ['css/*.scss'],
+                    dest: '.tmp',
+                    ext: '.css'
+                }]
             }
         }
     });
 
     grunt.registerTask('build', [
-        'wiredep', 'jade'
+        'wiredep', 'jade','sass'
     ]);
 
     grunt.registerTask('dist', [
