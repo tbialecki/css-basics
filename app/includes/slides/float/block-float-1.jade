@@ -1,1 +1,9 @@
-h1 Float
+h1 Float of blocks
+
+div.css-control-container
+    div.css-control float:&nbsp;
+        select(onchange="$('#float-block-iframe').contents().find('li').css('float',this.value)")
+            option(value='none') none
+            option(value='left') left
+            option(value='right') right
+iframe#float-block-iframe(src="frames/float/block/index.html")

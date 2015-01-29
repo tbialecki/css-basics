@@ -29,7 +29,9 @@ table {
 .blue {
   color: blue
 }
-
+.red {
+  color: red
+}
 tr {
   border-bottom: 1px solid gray;
 }
@@ -90,9 +92,10 @@ ul {
     }
   }
 }
+
 .css-control-container {
   background-color: #cccccc;
-  padding-left:10px ;
+  padding-left: 10px;
   .css-control {
     font-family: monospace;
     font-size: 20px;
@@ -105,6 +108,7 @@ ul {
     }
   }
 }
+
 //============================================= slides =============================================
 #start h1 {
   font-size: 100px;
@@ -150,10 +154,21 @@ h1.priorties {
   border: none;
 }
 
-#text-float {
+#block-float-1, #text-float, #clear {
   iframe {
-    height: 300px;
+    margin-top: 20px;
+    height: 460px;
   }
 }
 
+#float-exercise {
+  iframe{
+    min-height: 250px !important;
+  }
+  .cssdeck{
+    min-height: 250px !important;
+    height: 250px;
+    border:none !important;
+  }
+}
 

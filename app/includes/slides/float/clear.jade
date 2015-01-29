@@ -1,1 +1,17 @@
 h1 Clear
+
+div.css-control-container
+    div.css-control float:&nbsp;
+        select(onchange="$('#float-clear-iframe').contents().find('li').css('float',this.value)")
+            option(value='none') none
+            option(value='left') left
+            option(value='right') right
+    div.css-control <span class="red">clear</span>:&nbsp;
+        select(onchange="$('#float-clear-iframe').contents().find('li:nth-child(4)').css('clear',this.value)")
+            option(value='none') none
+            option(value='left') left
+            option(value='right') right
+            option(value='both') both
+    div.css-control append clearing element:&nbsp;
+        input(type='checkbox',value="block", onchange="$('#float-clear-iframe').contents().find('li.clear').css('display',this.checked? 'block' : 'none')")
+iframe#float-clear-iframe(src="frames/float/clear/index.html")
