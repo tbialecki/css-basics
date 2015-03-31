@@ -1,0 +1,22 @@
+h1 Vertical alignment
+
+h2 How to align <span class="blue">vertically</span> independently on container height
+div.container6-4
+    pre
+        code(contenteditable, data-trim)
+            | .container {
+            |   height: 200px;
+            |   position: relative
+            | }
+            | .child-container {
+            |   position: absolute;
+            |   height: 0;
+            |   overflow: visible;
+            |   top: 50%
+            | }
+            | .child {
+            |   height: 50px;
+            |   top: -25px;
+            |   position: relative
+            | }
+    iframe(src="frames/box-model/vertical-flex.html" ,height=200)

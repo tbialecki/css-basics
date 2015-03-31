@@ -1,0 +1,15 @@
+h1 Vertical alignment
+
+h2 How to align <span class="blue">vertically</span> with fixed container height
+pre
+    code(contenteditable, data-trim)
+        | .container {
+        |     height: 100px;
+        |     line-height: 100px;
+        | }
+
+        | .child {
+        |     display: inline-block;
+        |     vertical-align: middle;
+        | }
+iframe(src="frames/box-model/vertical-fixed.html" ,height=100)

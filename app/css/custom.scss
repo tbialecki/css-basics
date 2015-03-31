@@ -108,6 +108,10 @@ ul {
   }
 }
 
+pre {
+  margin-bottom: 20px;
+}
+
 //============================================= slides =============================================
 #start h1 {
   font-size: 100px;
@@ -171,3 +175,13 @@ h1.priorties {
   }
 }
 
+#positioning-example{
+  iframe {
+    height: 200px;
+  }
+}
+#positioning-exercise{
+  & > iframe{
+    min-height: 200px !important;
+  }
+}

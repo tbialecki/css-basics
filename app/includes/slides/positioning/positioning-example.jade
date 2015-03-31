@@ -1,0 +1,28 @@
+h1 Positioning example
+
+pre
+    code(contenteditable, data-trim)
+        |body {
+        |   position: relative
+        |}
+        |.container {
+        |   top: 50px; left: 50px; background: green
+        |}
+        |.child {
+        |   top: 50px; right: 50px; background: red
+        |}
+
+div.css-control-container
+    div.css-control <span style="color:green">position:&nbsp;</span>
+        select(onchange="$('#positioning-iframe').contents().find('.container').css('position',this.value)")
+            option(value='static') static
+            option(value='relative') relative
+            option(value='absolute') absolute
+            option(value='fixed') fixed
+    div.css-control <span class="red">position</span>:&nbsp;
+        select(onchange="$('#positioning-iframe').contents().find('.child').css('position',this.value)")
+            option(value='static') static
+            option(value='relative') relative
+            option(value='absolute') absolute
+            option(value='fixed') fixed
+iframe#positioning-iframe(src="frames/positioning/position/index.html")
