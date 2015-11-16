@@ -1,0 +1,21 @@
+h1 Vertical alignment
+
+h2 How to align <span class="blue">vertically</span> using table features
+div.container6-4
+    pre
+        code(contenteditable, data-trim)
+            | .container {
+            |   height: 200px;
+            |   display: table;
+            |   width: 100%
+            | }
+            | .child-container {
+            |   display: table-cell;
+            |   vertical-align: middle
+            | }
+            | .child {
+            |   height: 50px;
+            |   width: 50px;
+            |   background: yellow
+            | }
+    iframe(src="frames/box-model/vertical-table-cell.html" ,height=200)
