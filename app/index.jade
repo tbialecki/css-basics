@@ -1,13 +1,13 @@
 //- index.jade
 doctype html
 html(lang='en')
-include ./includes/layout/head.jade
-body.startup.impress-not-supported
-    include ./includes/layout/fallback-message.jade
-#impress
-    include ./includes/slides.jade
-    #overview.step(data-x='1000', data-y='0', data-scale='5')
-// bower:js
-script(src='lib/jquery/dist/jquery.js')
-// endbower
-include ./includes/layout/scripts.jade
+    include ./includes/layout/head.jade
+    body.startup.impress-not-supported
+        include ./includes/layout/fallback-message.jade
+        #impress
+            include ./includes/slides.jade
+            #overview.step(data-x='1000', data-y='0', data-scale='5')
+        // bower:js
+        script(src='lib/jquery/dist/jquery.js')
+        // endbower
+        include ./includes/layout/scripts.jade
